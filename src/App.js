@@ -7,7 +7,7 @@ function App() {
   const [notes, setNotes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/get_notes")
+    fetch("http://10.217.40.238:10000/get_notes")
       .then((response) => response.json())
       .then((data) => {
         if (data.notes) {
