@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   const fetchNote = () => {
-    fetch(`http://localhost:5000/get_note/${filename}`)
+    fetch(`https://flasknotes-m7sb.onrender.com/get_note/${filename}`)
       .then((response) => response.json())
       .then((data) => {
         if (!data.error) {
